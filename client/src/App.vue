@@ -57,7 +57,6 @@
 
       <br />
       <button v-on:click="sendRequest(1)">Send Request</button>
-      <!-- <textarea readonly v-model="comparisonOne.response"></textarea> -->
        <pre v-if="comparisonOne.response">{{ comparisonOne.response | pretty }}</pre>
     </div>
   </div>
