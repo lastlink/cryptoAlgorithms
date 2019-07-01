@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build .net core 2.x",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/c#/dotnetcore._2.x/dotnetcore._2.x.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish .net core 2.x",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/c#/dotnetcore._2.x/dotnetcore._2.x.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "watch .net core 2.x",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/c#/dotnetcore._2.x/dotnetcore._2.x.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        }
+    ]
+}

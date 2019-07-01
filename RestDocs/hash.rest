@@ -1,0 +1,29 @@
+### sha256
+
+POST {{protocol}}://{{url}}/hashes HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "algorithm": "sha256",
+    "salt": "test",
+    "password": "test",
+    "iterations": 36000
+}
+### bcrypt
+POST {{protocol}}://{{url}}/hashes HTTP/1.1
+Content-Type: application/json
+
+{
+    "algorithm": "bcrypt",
+    "password": "test"
+}
+### bcrypt verify
+POST {{protocol}}://{{url}}/hashesVerify HTTP/1.1
+Content-Type: application/json
+
+{
+    "algorithm": "bcrypt",
+    "password": "test",
+    "hashedPassword": "$2y$10$pUVM9fDLWH\/n\/gJm0EBCgePko8bCZGuH0JTez.D6tTgb0GQsBpa46"
+}
